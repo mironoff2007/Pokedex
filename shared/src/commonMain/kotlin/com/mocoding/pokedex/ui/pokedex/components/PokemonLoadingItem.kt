@@ -11,9 +11,42 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.dp
+import com.mocoding.pokedex.ui.theme.PokedexTheme
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.random.Random
+
+
+@Composable
+fun PokemonItemPreviewAlpha0() {
+    PokedexTheme {
+        PokemonLoadingItem(
+            modifier = Modifier,
+            alpha = 0f
+        )
+    }
+}
+
+@Composable
+fun PokemonItemPreviewAlpha05() {
+    PokedexTheme {
+        PokemonLoadingItem(
+            modifier = Modifier,
+            alpha = 0.5f
+        )
+    }
+}
+
+@Composable
+fun PokemonItemPreviewAlpha1() {
+    PokedexTheme {
+        PokemonLoadingItem(
+            modifier = Modifier,
+            alpha = 1f
+        )
+    }
+}
+
 
 @Composable
 internal fun PokemonLoadingItem(

@@ -18,6 +18,9 @@ kotlin {
             dependencies {
                 implementation(project(":shared"))
                 implementation(compose.desktop.currentOs)
+
+                //ComposePreview
+                api(compose.preview)
             }
         }
         val jvmTest by getting

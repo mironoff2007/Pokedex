@@ -50,4 +50,6 @@ dependencies {
     with(Deps.Koin) {
         api(android)
     }
+    //ComposePreview
+    implementation(Deps.Compose.preview)
 }

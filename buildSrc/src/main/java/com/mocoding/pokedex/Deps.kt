@@ -71,6 +71,11 @@ object Deps {
         }
     }
 
+    object Compose {
+        const val preview = "androidx.compose.ui:ui-tooling:${Versions.composeTooling}"
+        //debugImplementation("androidx.compose.ui:ui-tooling:1.3.3")
+    }
+
     object Github {
         const val imageLoader = "io.github.qdsfdhvh:image-loader:${Versions.imageLoader}"
     }
